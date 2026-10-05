@@ -20,7 +20,7 @@ export function ThemeToggle() {
       aria-label="Toggle color theme"
     >
       <MoonStar size={18} />
-      <span>Theme</span>
+      <span>B/W theme</span>
     </Button>
   );
 }

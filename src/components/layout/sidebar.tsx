@@ -1,5 +1,13 @@
 import Link from "next/link";
-import { Braces, GitBranch, Hammer, Home, Play, Sparkles } from "lucide-react";
+import {
+  ArrowUpRight,
+  Braces,
+  GitBranch,
+  Hammer,
+  Home,
+  Play,
+  Sparkles,
+} from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
 
 export const toolGroups = [
@@ -67,6 +75,22 @@ function NavContent() {
   );
 }
 
+function CreatorCredit() {
+  return (
+    <a
+      className="creator-credit"
+      href="https://github.com/Arjunren"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <span>
+        Created by <strong>Arjunren Von</strong>
+      </span>
+      <ArrowUpRight size={14} />
+    </a>
+  );
+}
+
 export function Sidebar() {
   return (
     <>
@@ -84,6 +108,7 @@ export function Sidebar() {
         <NavContent />
         <div className="sidebar-footer">
           <ThemeToggle />
+          <CreatorCredit />
           <p>
             <Sparkles size={13} /> Local-first. Always free.
           </p>
@@ -101,6 +126,7 @@ export function Sidebar() {
           <div className="mobile-menu-card">
             <NavContent />
             <ThemeToggle />
+            <CreatorCredit />
           </div>
         </details>
       </header>

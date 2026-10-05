@@ -11,6 +11,7 @@ A free, local-first web application for creating, previewing, and exporting GitH
 - Versioned, validated local persistence for README and playground drafts
 - Copy and `.md` download actions using browser APIs
 - Responsive sidebar/mobile navigation and light/dark modes
+- Monochrome cloud-inspired theme with an introductory creator credit for [Arjunren Von](https://github.com/Arjunren)
 - Static-first Next.js App Router architecture suitable for Vercel's free plan
 - Unit tests for generation, validation, escaping, and storage parsing
 

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Sidebar } from "@/components/layout/sidebar";
+import { SplashIntro } from "@/components/layout/splash-intro";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -22,6 +23,8 @@ export const metadata: Metadata = {
   description:
     "Create, preview, copy, and download GitHub-compatible Markdown and polished README files.",
   applicationName: "GitHub Markdown Toolkit",
+  authors: [{ name: "Arjunren Von", url: "https://github.com/Arjunren" }],
+  creator: "Arjunren Von",
   keywords: ["GitHub Markdown", "README builder", "Markdown generator"],
 };
 
@@ -39,6 +42,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               "try{if(localStorage.getItem('gmt-theme')==='dark'||(!localStorage.getItem('gmt-theme')&&matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.classList.add('dark')}catch(e){}",
           }}
         />
+        <SplashIntro />
         <Sidebar />
         <main className="app-main">{children}</main>
       </body>
